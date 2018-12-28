@@ -1,0 +1,40 @@
+StarWarsApp/Pods/Manifest.lock
+StarWarsApp/Pods/Alamofire/LICENSE
+StarWarsApp/Pods/Alamofire/README.md
+StarWarsApp/Pods/Alamofire/Source/AFError.swift
+StarWarsApp/Pods/Alamofire/Source/Alamofire.swift
+StarWarsApp/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift
+StarWarsApp/Pods/Alamofire/Source/MultipartFormData.swift
+StarWarsApp/Pods/Alamofire/Source/NetworkReachabilityManager.swift
+StarWarsApp/Pods/Alamofire/Source/Notifications.swift
+StarWarsApp/Pods/Alamofire/Source/ParameterEncoding.swift
+StarWarsApp/Pods/Alamofire/Source/Request.swift
+StarWarsApp/Pods/Alamofire/Source/Response.swift
+StarWarsApp/Pods/Alamofire/Source/ResponseSerialization.swift
+StarWarsApp/Pods/Alamofire/Source/Result.swift
+StarWarsApp/Pods/Alamofire/Source/ServerTrustPolicy.swift
+StarWarsApp/Pods/Alamofire/Source/SessionDelegate.swift
+StarWarsApp/Pods/Alamofire/Source/SessionManager.swift
+StarWarsApp/Pods/Alamofire/Source/TaskDelegate.swift
+StarWarsApp/Pods/Alamofire/Source/Timeline.swift
+StarWarsApp/Pods/Alamofire/Source/Validation.swift
+StarWarsApp/Pods/Pods.xcodeproj/project.pbxproj
+StarWarsApp/Pods/Target Support Files/Alamofire/Alamofire-dummy.m
+StarWarsApp/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch
+StarWarsApp/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
+StarWarsApp/Pods/Target Support Files/Alamofire/Alamofire.modulemap
+StarWarsApp/Pods/Target Support Files/Alamofire/Alamofire.xcconfig
+StarWarsApp/Pods/Target Support Files/Alamofire/Info.plist
+StarWarsApp/Pods/Target Support Files/Pods-StarWarsApp/Info.plist
+StarWarsApp/Pods/Pods.xcodeproj/xcuserdata/davidlopez.xcuserdatad/xcschemes/Alamofire.xcscheme
+StarWarsApp/Pods/Pods.xcodeproj/xcuserdata/davidlopez.xcuserdatad/xcschemes/Pods-StarWarsApp.xcscheme
+StarWarsApp/Pods/Pods.xcodeproj/xcuserdata/davidlopez.xcuserdatad/xcschemes/xcschememanagement.plist
+StarWarsApp/Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp-acknowledgements.markdown
+StarWarsApp/Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp-acknowledgements.plist
+StarWarsApp/Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp-dummy.m
+StarWarsApp/Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp-frameworks.sh
+StarWarsApp/Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp-resources.sh
+StarWarsApp/Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp-umbrella.h
+StarWarsApp/Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp.debug.xcconfig
+StarWarsApp/Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp.modulemap
+StarWarsApp/Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp.release.xcconfig
