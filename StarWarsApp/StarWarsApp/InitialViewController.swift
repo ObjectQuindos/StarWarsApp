@@ -7,16 +7,11 @@
 //
 
 import UIKit
-import Alamofire
 
-class ViewController: UIViewController {
-
+class InitialViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
     }
-
-
 }
-

@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		3AA268C2AFB1422515828480 /* Pods_StarWarsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F600662913D886B9B79BF26 /* Pods_StarWarsApp.framework */; };
 		A979D12F21D69FE3008B0C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979D12E21D69FE3008B0C91 /* AppDelegate.swift */; };
-		A979D13121D69FE3008B0C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979D13021D69FE3008B0C91 /* ViewController.swift */; };
+		A979D13121D69FE3008B0C91 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979D13021D69FE3008B0C91 /* InitialViewController.swift */; };
 		A979D13421D69FE3008B0C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A979D13221D69FE3008B0C91 /* Main.storyboard */; };
 		A979D13621D69FE9008B0C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A979D13521D69FE9008B0C91 /* Assets.xcassets */; };
 		A979D13921D69FE9008B0C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A979D13721D69FE9008B0C91 /* LaunchScreen.storyboard */; };
+		A9D6BD8D21D6A77D00C08CC7 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6BD8C21D6A77D00C08CC7 /* WebServiceManager.swift */; };
+		A9D6BD9021D6AB2600C08CC7 /* WebServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6BD8F21D6AB2600C08CC7 /* WebServiceRouter.swift */; };
+		A9D6BD9221D6C11300C08CC7 /* TypeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6BD9121D6C11300C08CC7 /* TypeRequests.swift */; };
+		A9FA983521D78266000BA3BB /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA983421D78266000BA3BB /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +24,15 @@
 		955F87D0959A5D45618EF8E5 /* Pods-StarWarsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp.release.xcconfig"; sourceTree = "<group>"; };
 		A979D12B21D69FE3008B0C91 /* StarWarsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A979D12E21D69FE3008B0C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A979D13021D69FE3008B0C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A979D13021D69FE3008B0C91 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		A979D13321D69FE3008B0C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A979D13521D69FE9008B0C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A979D13821D69FE9008B0C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A979D13A21D69FE9008B0C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D6BD8C21D6A77D00C08CC7 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		A9D6BD8F21D6AB2600C08CC7 /* WebServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceRouter.swift; sourceTree = "<group>"; };
+		A9D6BD9121D6C11300C08CC7 /* TypeRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRequests.swift; sourceTree = "<group>"; };
+		A9FA983421D78266000BA3BB /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		FF0BE2245EDBE6AFD02E8320 /* Pods-StarWarsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				A979D12E21D69FE3008B0C91 /* AppDelegate.swift */,
-				A979D13021D69FE3008B0C91 /* ViewController.swift */,
+				A9FA983421D78266000BA3BB /* LoadingViewController.swift */,
+				A979D13021D69FE3008B0C91 /* InitialViewController.swift */,
+				A9D6BD8C21D6A77D00C08CC7 /* WebServiceManager.swift */,
+				A9D6BD8F21D6AB2600C08CC7 /* WebServiceRouter.swift */,
+				A9D6BD9121D6C11300C08CC7 /* TypeRequests.swift */,
 				A979D13221D69FE3008B0C91 /* Main.storyboard */,
 				A979D13521D69FE9008B0C91 /* Assets.xcassets */,
 				A979D13721D69FE9008B0C91 /* LaunchScreen.storyboard */,
@@ -208,8 +220,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A979D13121D69FE3008B0C91 /* ViewController.swift in Sources */,
+				A979D13121D69FE3008B0C91 /* InitialViewController.swift in Sources */,
+				A9D6BD9021D6AB2600C08CC7 /* WebServiceRouter.swift in Sources */,
+				A9D6BD9221D6C11300C08CC7 /* TypeRequests.swift in Sources */,
 				A979D12F21D69FE3008B0C91 /* AppDelegate.swift in Sources */,
+				A9D6BD8D21D6A77D00C08CC7 /* WebServiceManager.swift in Sources */,
+				A9FA983521D78266000BA3BB /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
