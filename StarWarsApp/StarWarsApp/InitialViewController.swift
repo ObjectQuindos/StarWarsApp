@@ -44,6 +44,7 @@ class InitialViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "starWarsCell", for: indexPath)
         let name = dataSelected[indexPath.row]["name"] as! String
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         cell.textLabel?.text = name
         return cell
     }

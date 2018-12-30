@@ -41,8 +41,9 @@ class FilmsViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let webViewController = storyboard?.instantiateViewController(withIdentifier: "filmsWebViewController") as! FilmsWebViewController
-        webViewController.urlString = links[indexPath.row]
-        navigationController?.pushViewController(webViewController, animated: true)
+        let openingFilmViewController = storyboard?.instantiateViewController(withIdentifier: "openingFilmViewController") as! OpeningFilmViewController
+        openingFilmViewController.openingText = filmsData[indexPath.row]["opening_crawl"] as! String
+        openingFilmViewController.filmaffinityLink = links[indexPath.row]
+        navigationController?.pushViewController(openingFilmViewController, animated: true)
     }
 }

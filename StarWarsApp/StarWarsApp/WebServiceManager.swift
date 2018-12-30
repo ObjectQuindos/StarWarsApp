@@ -11,7 +11,6 @@ import Alamofire
 
 enum BackendError: Error {
     case objectSerialization(reason: String)
-    case network(error: Error)
     case apiProvidedError(reason: String)
     case noInternetConnection(reason: String)
 }
