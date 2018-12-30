@@ -8,6 +8,14 @@
 
 import Foundation
 
+enum TypeSelected: String {
+    case planets = "planets"
+    case people = "people"
+    case spaceships = "spaceships"
+    case vehicles = "vehicles"
+    case species = "species"
+}
+
 class TypeRequests {
     
     let globalQueue = DispatchQueue.global(qos: .userInitiated)
@@ -31,7 +39,6 @@ class TypeRequests {
         TypeRequests.getSpecies()
         
         TypeRequests.allDataDownloadGroup.notify(queue: DispatchQueue.main) {
-            print("YEEEEAAAAAHHHH")
             completionHandler(allStarWarsData)
         }
     }
@@ -139,7 +146,7 @@ class TypeRequests {
         DispatchQueue.concurrentPerform(iterations: 50) { (index) in
             speciesDownloadGroup.enter()
             
-            WebServiceManager.sharedInstance.getVehicles(idVehicle: index, completionHandler: { (response) in
+            WebServiceManager.sharedInstance.getSpecies(idSpecie: index, completionHandler: { (response) in
                 response?.ifSuccess {
                     speciesArray.append(response!.value!)
                 }

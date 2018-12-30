@@ -16,6 +16,7 @@
 		A9D6BD8D21D6A77D00C08CC7 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6BD8C21D6A77D00C08CC7 /* WebServiceManager.swift */; };
 		A9D6BD9021D6AB2600C08CC7 /* WebServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6BD8F21D6AB2600C08CC7 /* WebServiceRouter.swift */; };
 		A9D6BD9221D6C11300C08CC7 /* TypeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D6BD9121D6C11300C08CC7 /* TypeRequests.swift */; };
+		A9E8639D21D8325B00FC63D3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8639C21D8325B00FC63D3 /* DetailViewController.swift */; };
 		A9FA983521D78266000BA3BB /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA983421D78266000BA3BB /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		A9D6BD8C21D6A77D00C08CC7 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		A9D6BD8F21D6AB2600C08CC7 /* WebServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceRouter.swift; sourceTree = "<group>"; };
 		A9D6BD9121D6C11300C08CC7 /* TypeRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRequests.swift; sourceTree = "<group>"; };
+		A9E8639C21D8325B00FC63D3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A9FA983421D78266000BA3BB /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		FF0BE2245EDBE6AFD02E8320 /* Pods-StarWarsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 				A979D12E21D69FE3008B0C91 /* AppDelegate.swift */,
 				A9FA983421D78266000BA3BB /* LoadingViewController.swift */,
 				A979D13021D69FE3008B0C91 /* InitialViewController.swift */,
+				A9E8639C21D8325B00FC63D3 /* DetailViewController.swift */,
 				A9D6BD8C21D6A77D00C08CC7 /* WebServiceManager.swift */,
 				A9D6BD8F21D6AB2600C08CC7 /* WebServiceRouter.swift */,
 				A9D6BD9121D6C11300C08CC7 /* TypeRequests.swift */,
@@ -226,6 +229,7 @@
 				A979D12F21D69FE3008B0C91 /* AppDelegate.swift in Sources */,
 				A9D6BD8D21D6A77D00C08CC7 /* WebServiceManager.swift in Sources */,
 				A9FA983521D78266000BA3BB /* LoadingViewController.swift in Sources */,
+				A9E8639D21D8325B00FC63D3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

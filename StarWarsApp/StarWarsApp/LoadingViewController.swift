@@ -19,12 +19,14 @@ class LoadingViewController: UIViewController {
         indicatorView.startAnimating()
         TypeRequests.getAllStarWarsData { (starWarsData) in
             self.indicatorView.stopAnimating()
-            self.showInitialViewController()
+            self.showInitialViewController(withData: starWarsData)
         }
     }
     
-    private func showInitialViewController() {
+    private func showInitialViewController(withData starWarsData: [String : Any]?) {
         let initialViewController = self.storyboard?.instantiateViewController(withIdentifier: "initialViewController") as! InitialViewController
-        self.present(initialViewController, animated: true, completion: nil)
+        initialViewController.starWarsData = starWarsData
+        let navigation = UINavigationController(rootViewController: initialViewController)
+        self.present(navigation, animated: true, completion: nil)
     }
 }
