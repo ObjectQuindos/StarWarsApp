@@ -38,6 +38,9 @@ class TypeRequests {
         TypeRequests.allDataDownloadGroup.enter()
         TypeRequests.getSpecies()
         
+        TypeRequests.allDataDownloadGroup.enter()
+        TypeRequests.getFilms()
+        
         TypeRequests.allDataDownloadGroup.notify(queue: DispatchQueue.main) {
             completionHandler(allStarWarsData)
         }
@@ -159,6 +162,30 @@ class TypeRequests {
         
         speciesDownloadGroup.notify(queue: DispatchQueue.main) {
             TypeRequests.allStarWarsData["species"] = speciesArray
+            TypeRequests.allDataDownloadGroup.leave()
+        }
+    }
+    
+    static func getFilms() {
+        let filmsDownloadGroup = DispatchGroup()
+        var filmsArray: [[String : Any]] = []
+        
+        DispatchQueue.concurrentPerform(iterations: 8) { (index) in
+            filmsDownloadGroup.enter()
+            
+            WebServiceManager.sharedInstance.getFilms(idFilm: index, completionHandler: { (response) in
+                response?.ifSuccess {
+                    filmsArray.append(response!.value!)
+                }
+                response?.ifFailure {
+                    print("Error: \(String(describing: response!.error))")
+                }
+                filmsDownloadGroup.leave()
+            })
+        }
+        
+        filmsDownloadGroup.notify(queue: DispatchQueue.main) {
+            TypeRequests.allStarWarsData["films"] = filmsArray
             TypeRequests.allDataDownloadGroup.leave()
         }
     }

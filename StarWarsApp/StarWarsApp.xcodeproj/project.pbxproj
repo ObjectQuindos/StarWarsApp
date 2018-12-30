@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3AA268C2AFB1422515828480 /* Pods_StarWarsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F600662913D886B9B79BF26 /* Pods_StarWarsApp.framework */; };
+		A9126F0D21D8E30E008403E5 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9126F0C21D8E30E008403E5 /* FilmsViewController.swift */; };
+		A9126F0F21D8EEEB008403E5 /* FilmsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9126F0E21D8EEEB008403E5 /* FilmsTableViewCell.swift */; };
+		A9126F1121D91743008403E5 /* FilmsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9126F1021D91743008403E5 /* FilmsWebViewController.swift */; };
 		A979D12F21D69FE3008B0C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979D12E21D69FE3008B0C91 /* AppDelegate.swift */; };
 		A979D13121D69FE3008B0C91 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979D13021D69FE3008B0C91 /* InitialViewController.swift */; };
 		A979D13421D69FE3008B0C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A979D13221D69FE3008B0C91 /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 /* Begin PBXFileReference section */
 		0F600662913D886B9B79BF26 /* Pods_StarWarsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWarsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		955F87D0959A5D45618EF8E5 /* Pods-StarWarsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarWarsApp/Pods-StarWarsApp.release.xcconfig"; sourceTree = "<group>"; };
+		A9126F0C21D8E30E008403E5 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
+		A9126F0E21D8EEEB008403E5 /* FilmsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsTableViewCell.swift; sourceTree = "<group>"; };
+		A9126F1021D91743008403E5 /* FilmsWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsWebViewController.swift; sourceTree = "<group>"; };
 		A979D12B21D69FE3008B0C91 /* StarWarsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A979D12E21D69FE3008B0C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A979D13021D69FE3008B0C91 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +98,9 @@
 				A9FA983421D78266000BA3BB /* LoadingViewController.swift */,
 				A979D13021D69FE3008B0C91 /* InitialViewController.swift */,
 				A9E8639C21D8325B00FC63D3 /* DetailViewController.swift */,
+				A9126F0C21D8E30E008403E5 /* FilmsViewController.swift */,
+				A9126F1021D91743008403E5 /* FilmsWebViewController.swift */,
+				A9126F0E21D8EEEB008403E5 /* FilmsTableViewCell.swift */,
 				A9D6BD8C21D6A77D00C08CC7 /* WebServiceManager.swift */,
 				A9D6BD8F21D6AB2600C08CC7 /* WebServiceRouter.swift */,
 				A9D6BD9121D6C11300C08CC7 /* TypeRequests.swift */,
@@ -226,9 +235,12 @@
 				A979D13121D69FE3008B0C91 /* InitialViewController.swift in Sources */,
 				A9D6BD9021D6AB2600C08CC7 /* WebServiceRouter.swift in Sources */,
 				A9D6BD9221D6C11300C08CC7 /* TypeRequests.swift in Sources */,
+				A9126F1121D91743008403E5 /* FilmsWebViewController.swift in Sources */,
 				A979D12F21D69FE3008B0C91 /* AppDelegate.swift in Sources */,
 				A9D6BD8D21D6A77D00C08CC7 /* WebServiceManager.swift in Sources */,
 				A9FA983521D78266000BA3BB /* LoadingViewController.swift in Sources */,
+				A9126F0D21D8E30E008403E5 /* FilmsViewController.swift in Sources */,
+				A9126F0F21D8EEEB008403E5 /* FilmsTableViewCell.swift in Sources */,
 				A9E8639D21D8325B00FC63D3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

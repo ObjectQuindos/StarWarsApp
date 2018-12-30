@@ -16,11 +16,16 @@ class LoadingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setNeedsStatusBarAppearanceUpdate()
         indicatorView.startAnimating()
         TypeRequests.getAllStarWarsData { (starWarsData) in
             self.indicatorView.stopAnimating()
             self.showInitialViewController(withData: starWarsData)
         }
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     private func showInitialViewController(withData starWarsData: [String : Any]?) {

@@ -60,6 +60,14 @@ class WebServiceManager {
         }
     }
     
+    func getFilms(idFilm: Int, completionHandler: @escaping (Result<[String : Any]>?) -> Void) {
+        let idString = String(idFilm)
+        Alamofire.request(WebServiceRouter.getFilms(idString)).validate().responseJSON { (response) in
+            let result = self.todoFromJsonResponse(response: response)
+            completionHandler(result)
+        }
+    }
+    
     private func todoFromJsonResponse(response: DataResponse<Any>) -> Result<[String : Any]> {
         if !(NetworkReachabilityManager()!.isReachable) {
             return .failure(BackendError.noInternetConnection(reason: "noInternet"))

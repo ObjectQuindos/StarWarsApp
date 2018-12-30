@@ -64,42 +64,42 @@ class DetailViewController: UIViewController {
     }
     
     private func planetData() {
-        firstLabel.text = "Periodo rotación: \(String(describing: dataSelected["rotation_period"] as! String))"
-        secondLabel.text = "Periodo orbital: \(String(describing: dataSelected["orbital_period"] as! String))"
-        thirdLabel.text = "Diámetro: \(String(describing: dataSelected["diameter"] as! String))"
-        fourthLabel.text = "Clima: \(String(describing: dataSelected["climate"] as! String))"
-        fifthLabel.text = "Gravedad: \(String(describing: dataSelected["gravity"] as! String))"
-        sixthLabel.text = "Terreno: \(String(describing: dataSelected["terrain"] as! String))"
-        seventhLabel.text = "Población: \(String(describing: dataSelected["population"] as! String))"
+        firstLabel.text = "Rotation period: \(String(describing: dataSelected["rotation_period"] as! String))"
+        secondLabel.text = "Orbital period: \(String(describing: dataSelected["orbital_period"] as! String))"
+        thirdLabel.text = "Diameter: \(String(describing: dataSelected["diameter"] as! String))"
+        fourthLabel.text = "Climate: \(String(describing: dataSelected["climate"] as! String))"
+        fifthLabel.text = "Gravity: \(String(describing: dataSelected["gravity"] as! String))"
+        sixthLabel.text = "Terrain: \(String(describing: dataSelected["terrain"] as! String))"
+        seventhLabel.text = "Population: \(String(describing: dataSelected["population"] as! String))"
     }
     
     private func peopleData() {
-        firstLabel.text = "Altura: \(String(describing: dataSelected["height"] as! String))"
-        secondLabel.text = "Peso: \(String(describing: dataSelected["mass"] as! String))"
-        thirdLabel.text = "Color de pelo: \(String(describing: dataSelected["hair_color"] as! String))"
-        fourthLabel.text = "Color de piel: \(String(describing: dataSelected["skin_color"] as! String))"
-        fifthLabel.text = "Color de ojos: \(String(describing: dataSelected["eye_color"] as! String))"
-        sixthLabel.text = "Año Nacimiento: \(String(describing: dataSelected["birth_year"] as! String))"
-        seventhLabel.text = "Género: \(String(describing: dataSelected["gender"] as! String))"
+        firstLabel.text = "Height: \(String(describing: dataSelected["height"] as! String))"
+        secondLabel.text = "Mass: \(String(describing: dataSelected["mass"] as! String))"
+        thirdLabel.text = "Hair color: \(String(describing: dataSelected["hair_color"] as! String))"
+        fourthLabel.text = "Skin color: \(String(describing: dataSelected["skin_color"] as! String))"
+        fifthLabel.text = "Eyes color: \(String(describing: dataSelected["eye_color"] as! String))"
+        sixthLabel.text = "Birth year: \(String(describing: dataSelected["birth_year"] as! String))"
+        seventhLabel.text = "Gender: \(String(describing: dataSelected["gender"] as! String))"
     }
     
     private func speciesData() {
-        firstLabel.text = "Clasificación: \(String(describing: dataSelected["classification"] as! String))"
-        secondLabel.text = "Designación: \(String(describing: dataSelected["designation"] as! String))"
-        thirdLabel.text = "Altura media: \(String(describing: dataSelected["average_height"] as! String))"
-        fourthLabel.text = "Colores de piel: \(String(describing: dataSelected["skin_colors"] as! String))"
-        fifthLabel.text = "Colores de pelo: \(String(describing: dataSelected["hair_colors"] as! String))"
-        sixthLabel.text = "Colores de ojos: \(String(describing: dataSelected["eye_colors"] as! String))"
-        seventhLabel.text = "Idioma: \(String(describing: dataSelected["language"] as! String))"
+        firstLabel.text = "Classification: \(String(describing: dataSelected["classification"] as! String))"
+        secondLabel.text = "Designation: \(String(describing: dataSelected["designation"] as! String))"
+        thirdLabel.text = "Average height: \(String(describing: dataSelected["average_height"] as! String))"
+        fourthLabel.text = "Skin colors: \(String(describing: dataSelected["skin_colors"] as! String))"
+        fifthLabel.text = "Hair colors: \(String(describing: dataSelected["hair_colors"] as! String))"
+        sixthLabel.text = "Eyes colors: \(String(describing: dataSelected["eye_colors"] as! String))"
+        seventhLabel.text = "Language: \(String(describing: dataSelected["language"] as! String))"
     }
     
     private func spaceshipsData() {
-        firstLabel.text = "Modelo: \(String(describing: dataSelected["model"] as! String))"
-        secondLabel.text = "Manufacturador: \(String(describing: dataSelected["manufacturer"] as! String))"
-        thirdLabel.text = "Longitud: \(String(describing: dataSelected["length"] as! String))"
-        fourthLabel.text = "Atm. velocidad: \(String(describing: dataSelected["max_atmosphering_speed"] as! String))"
+        firstLabel.text = "Model: \(String(describing: dataSelected["model"] as! String))"
+        secondLabel.text = "Manufacturer: \(String(describing: dataSelected["manufacturer"] as! String))"
+        thirdLabel.text = "Length: \(String(describing: dataSelected["length"] as! String))"
+        fourthLabel.text = "Atm. speed: \(String(describing: dataSelected["max_atmosphering_speed"] as! String))"
         fifthLabel.text = "Crew: \(String(describing: dataSelected["crew"] as! String))"
-        sixthLabel.text = "Pasajeros: \(String(describing: dataSelected["passengers"] as! String))"
-        seventhLabel.text = "Coste en créditos: \(String(describing: dataSelected["cost_in_credits"] as! String))"
+        sixthLabel.text = "Passengers: \(String(describing: dataSelected["passengers"] as! String))"
+        seventhLabel.text = "Cost in credits: \(String(describing: dataSelected["cost_in_credits"] as! String))"
     }
 }

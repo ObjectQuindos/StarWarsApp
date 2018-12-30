@@ -23,12 +23,18 @@ class InitialViewController: UIViewController, UITableViewDataSource, UITableVie
         
         dataSelected = starWarsData!["planets"] as! [[String : Any]]
         title = "STAR WARS"
-        tableView.tableFooterView = UIView()
         lowerSegmentedControl.selectedSegmentIndex = UISegmentedControl.noSegment
-        
+        setUI()
+    }
+    
+    private func setUI() {
         let imageView = UIImageView(image: UIImage(named: "initBack"))
         tableView.backgroundView = imageView
         tableView.backgroundColor = UIColor.lightGray
+        tableView.tableFooterView = UIView()
+        
+        let barButtonItem = UIBarButtonItem(title: "Films", style: .plain, target: self, action: #selector(InitialViewController.filmsViewController))
+        self.navigationItem.rightBarButtonItem = barButtonItem
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,6 +68,12 @@ class InitialViewController: UIViewController, UITableViewDataSource, UITableVie
         transition.type = CATransitionType.fade
         self.view.window?.layer.add(transition, forKey: kCATransition)
         present(detailViewController, animated: false, completion: nil)
+    }
+    
+    @objc private func filmsViewController() {
+        let filmsViewController = storyboard?.instantiateViewController(withIdentifier: "filmsViewController") as! FilmsViewController
+        filmsViewController.filmsData = starWarsData!["films"] as! [[String : Any]]
+        self.navigationController?.pushViewController(filmsViewController, animated: true)
     }
     
     @IBAction func upperSegmentedControlAction(_ sender: UISegmentedControl) {

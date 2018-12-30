@@ -17,12 +17,13 @@ enum WebServiceRouter: URLRequestConvertible {
     case getSpaceships(String)
     case getVehicles(String)
     case getSpecies(String)
+    case getFilms(String)
     
     func asURLRequest() throws -> URLRequest {
         
         var method: HTTPMethod {
             switch self {
-            case .getPlanets, .getPeople, .getSpaceships, .getVehicles, .getSpecies:
+            case .getPlanets, .getPeople, .getSpaceships, .getVehicles, .getSpecies, .getFilms:
                 return .get
             }
         }
@@ -45,6 +46,9 @@ enum WebServiceRouter: URLRequestConvertible {
                 
             case .getSpecies(let idSpecie):
                 relativePath = "species/\(idSpecie)"
+                
+            case .getFilms(let idFilm):
+                relativePath = "films/\(idFilm)"
             }
             
             var url: URL?
@@ -57,7 +61,7 @@ enum WebServiceRouter: URLRequestConvertible {
         
         let params: ([String : Any]?) = {
             switch self {
-            case .getPlanets, .getPeople, .getSpaceships, .getVehicles, .getSpecies:
+            case .getPlanets, .getPeople, .getSpaceships, .getVehicles, .getSpecies, .getFilms:
                 return nil
             }
         }()
