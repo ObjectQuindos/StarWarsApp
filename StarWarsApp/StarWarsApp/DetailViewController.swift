@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    @IBOutlet weak var innerContainerView: UIView! { didSet { innerContainerView.layer.cornerRadius = 16 } }
+    @IBOutlet weak var scrollView: UIScrollView! { didSet { scrollView.layer.cornerRadius = 16 } }
     @IBOutlet weak var closeImageView: UIImageView!
     @IBOutlet weak var containerView: UIView! { didSet { containerView.layer.cornerRadius = 16 } }
     
