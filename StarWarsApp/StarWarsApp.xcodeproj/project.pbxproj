@@ -75,6 +75,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A91A9F4521D96F9900CDD015 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A979D12E21D69FE3008B0C91 /* AppDelegate.swift */,
+				A979D13521D69FE9008B0C91 /* Assets.xcassets */,
+				A979D13721D69FE9008B0C91 /* LaunchScreen.storyboard */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		A91A9F4621D96FB800CDD015 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA983421D78266000BA3BB /* LoadingViewController.swift */,
+				A979D13021D69FE3008B0C91 /* InitialViewController.swift */,
+				A9E8639C21D8325B00FC63D3 /* DetailViewController.swift */,
+				A9126F0C21D8E30E008403E5 /* FilmsViewController.swift */,
+				A9126F0E21D8EEEB008403E5 /* FilmsTableViewCell.swift */,
+				A91A9F4221D9558E00CDD015 /* OpeningFilmViewController.swift */,
+				A9126F1021D91743008403E5 /* FilmsWebViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A91A9F4721D96FCC00CDD015 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				A9D6BD8C21D6A77D00C08CC7 /* WebServiceManager.swift */,
+				A9D6BD8F21D6AB2600C08CC7 /* WebServiceRouter.swift */,
+				A9D6BD9121D6C11300C08CC7 /* TypeRequests.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
 		A979D12221D69FE3008B0C91 = {
 			isa = PBXGroup;
 			children = (
@@ -96,21 +130,11 @@
 		A979D12D21D69FE3008B0C91 /* StarWarsApp */ = {
 			isa = PBXGroup;
 			children = (
-				A979D12E21D69FE3008B0C91 /* AppDelegate.swift */,
-				A9FA983421D78266000BA3BB /* LoadingViewController.swift */,
-				A979D13021D69FE3008B0C91 /* InitialViewController.swift */,
-				A9E8639C21D8325B00FC63D3 /* DetailViewController.swift */,
-				A9126F0C21D8E30E008403E5 /* FilmsViewController.swift */,
-				A9126F0E21D8EEEB008403E5 /* FilmsTableViewCell.swift */,
-				A91A9F4221D9558E00CDD015 /* OpeningFilmViewController.swift */,
-				A9126F1021D91743008403E5 /* FilmsWebViewController.swift */,
-				A9D6BD8C21D6A77D00C08CC7 /* WebServiceManager.swift */,
-				A9D6BD8F21D6AB2600C08CC7 /* WebServiceRouter.swift */,
-				A9D6BD9121D6C11300C08CC7 /* TypeRequests.swift */,
-				A979D13221D69FE3008B0C91 /* Main.storyboard */,
-				A979D13521D69FE9008B0C91 /* Assets.xcassets */,
-				A979D13721D69FE9008B0C91 /* LaunchScreen.storyboard */,
 				A979D13A21D69FE9008B0C91 /* Info.plist */,
+				A979D13221D69FE3008B0C91 /* Main.storyboard */,
+				A91A9F4621D96FB800CDD015 /* ViewControllers */,
+				A91A9F4721D96FCC00CDD015 /* WebService */,
+				A91A9F4521D96F9900CDD015 /* SupportFiles */,
 			);
 			path = StarWarsApp;
 			sourceTree = "<group>";
